@@ -1,0 +1,315 @@
+{
+  "clocks": [
+    {
+      "id": "clock_demo",
+      "code": "CLK-1890-07",
+      "escapementType": "瑞士杠杆式",
+      "balanceFrequency": "18000vph",
+      "targetDailyRateSeconds": 20,
+      "note": "怀表机芯，走时偏快",
+      "createdAt": "2026-06-16T00:00:00.000Z",
+      "generation": 1,
+      "currentHairspringId": null
+    },
+    {
+      "id": "clock_mua91nlo_97ufx9",
+      "code": "CLK-2026-01",
+      "escapementType": "同轴擒纵",
+      "balanceFrequency": "25200vph",
+      "targetDailyRateSeconds": 15,
+      "note": "",
+      "generation": 3,
+      "currentHairspringId": "hairspring_mua91nma_d36yae",
+      "createdAt": "2026-09-20T20:08:55.740Z"
+    },
+    {
+      "id": "clock_mua91nml_x9q3u3",
+      "code": "CLK-2026-02",
+      "escapementType": "杠杆式",
+      "balanceFrequency": "21600vph",
+      "targetDailyRateSeconds": 30,
+      "note": "",
+      "generation": 1,
+      "currentHairspringId": null,
+      "createdAt": "2026-09-20T20:08:55.773Z"
+    }
+  ],
+  "adjustments": [
+    {
+      "id": "adjustment_demo",
+      "clockId": "clock_demo",
+      "currentDailyRateSeconds": 68,
+      "direction": "慢针方向",
+      "amount": "游丝快慢针向慢侧微调0.4格",
+      "note": "初次调校，先保守处理",
+      "createdAt": "2026-06-16T00:00:00.000Z",
+      "generation": 1,
+      "hairspringId": null
+    },
+    {
+      "id": "adjustment_mua91nm8_mwlw8n",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "hairspringId": null,
+      "currentDailyRateSeconds": 25,
+      "direction": "快针方向",
+      "amount": "微调0.2格",
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.760Z"
+    },
+    {
+      "id": "adjustment_mua91nmc_p8tnpw",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 2,
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "currentDailyRateSeconds": 18,
+      "direction": "慢针方向",
+      "amount": "微调0.1格",
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.764Z"
+    },
+    {
+      "id": "adjustment_mua91nmj_2q1438",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 3,
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "currentDailyRateSeconds": 12,
+      "direction": "慢针方向",
+      "amount": "微调0.05格",
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.771Z"
+    }
+  ],
+  "retests": [
+    {
+      "id": "retest_demo",
+      "clockId": "clock_demo",
+      "adjustmentId": "adjustment_demo",
+      "testedAt": "2026-06-16T00:00:00.000Z",
+      "dailyRateSeconds": 31,
+      "amplitude": 248,
+      "qualified": false,
+      "note": "仍偏快，振幅尚可",
+      "generation": 1,
+      "hairspringId": null
+    },
+    {
+      "id": "retest_mua91nm9_c3tez5",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "hairspringId": null,
+      "adjustmentId": "adjustment_mua91nm8_mwlw8n",
+      "testedAt": "2026-09-20T20:08:55.761Z",
+      "dailyRateSeconds": 10,
+      "amplitude": 260,
+      "qualified": true,
+      "note": ""
+    },
+    {
+      "id": "retest_mua91nmd_rnozlf",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 2,
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "adjustmentId": "adjustment_mua91nmc_p8tnpw",
+      "testedAt": "2026-09-20T20:08:55.765Z",
+      "dailyRateSeconds": 5,
+      "amplitude": 265,
+      "qualified": true,
+      "note": ""
+    },
+    {
+      "id": "retest_mua91nmj_kddl3o",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 3,
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "adjustmentId": "adjustment_mua91nmj_2q1438",
+      "testedAt": "2026-09-20T20:08:55.771Z",
+      "dailyRateSeconds": 6,
+      "amplitude": 270,
+      "qualified": true,
+      "note": ""
+    }
+  ],
+  "hairsprings": [
+    {
+      "id": "hairspring_mua91nma_d36yae",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "code": "HS-NIVAROX-01",
+      "version": 1,
+      "generation": 2,
+      "note": "更换游丝",
+      "installedAt": "2026-09-20T20:08:55.762Z",
+      "replacedAt": null
+    }
+  ],
+  "settingOrders": [
+    {
+      "id": "setting_mua91nlq_y28f7g",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "hairspringId": null,
+      "generation": 1,
+      "version": 1,
+      "furnaceTemp": 150,
+      "holdingHours": 1,
+      "operator": "张三",
+      "reviewer": "李四",
+      "reviewedAt": "2026-09-20T20:08:55.753Z",
+      "status": "released",
+      "specCheck": {
+        "inSpec": false,
+        "reasons": [
+          "炉温150℃不在180~220℃范围",
+          "保温1小时不足2小时"
+        ]
+      },
+      "consecutiveDriftPasses": 2,
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.742Z",
+      "releasedAt": "2026-09-20T20:08:55.758Z",
+      "supersededAt": null,
+      "supersedeReason": null,
+      "supersededBy": null,
+      "reworkNote": "换李四复核返工"
+    },
+    {
+      "id": "setting_mua91nmb_q8t9sr",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "generation": 2,
+      "version": 2,
+      "furnaceTemp": 220,
+      "holdingHours": 2,
+      "operator": "赵六",
+      "reviewer": null,
+      "reviewedAt": null,
+      "status": "superseded",
+      "specCheck": {
+        "inSpec": true,
+        "reasons": []
+      },
+      "consecutiveDriftPasses": 0,
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.763Z",
+      "releasedAt": "2026-09-20T20:08:55.763Z",
+      "supersededAt": "2026-09-20T20:08:55.766Z",
+      "supersedeReason": "revised",
+      "supersededBy": "setting_mua91nme_lw3x6p"
+    },
+    {
+      "id": "setting_mua91nme_lw3x6p",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "hairspringId": "hairspring_mua91nma_d36yae",
+      "generation": 3,
+      "version": 3,
+      "furnaceTemp": 175,
+      "holdingHours": 1.5,
+      "operator": "赵六",
+      "reviewer": "钱七",
+      "reviewedAt": "2026-09-20T20:08:55.767Z",
+      "status": "released",
+      "specCheck": {
+        "inSpec": false,
+        "reasons": [
+          "炉温175℃不在180~220℃范围",
+          "保温1.5小时不足2小时"
+        ]
+      },
+      "consecutiveDriftPasses": 2,
+      "note": "炉温登记有误，修订",
+      "createdAt": "2026-09-20T20:08:55.766Z",
+      "releasedAt": "2026-09-20T20:08:55.770Z",
+      "supersededAt": null,
+      "supersedeReason": null,
+      "supersededBy": null,
+      "reworkNote": ""
+    },
+    {
+      "id": "setting_mua91nmm_hyjm2q",
+      "clockId": "clock_mua91nml_x9q3u3",
+      "hairspringId": null,
+      "generation": 1,
+      "version": 1,
+      "furnaceTemp": 190,
+      "holdingHours": 1,
+      "operator": "甲",
+      "reviewer": null,
+      "reviewedAt": null,
+      "status": "rework_required",
+      "specCheck": {
+        "inSpec": false,
+        "reasons": [
+          "保温1小时不足2小时"
+        ]
+      },
+      "consecutiveDriftPasses": 0,
+      "note": "",
+      "createdAt": "2026-09-20T20:08:55.774Z",
+      "releasedAt": null,
+      "supersededAt": null,
+      "supersedeReason": null,
+      "supersededBy": null
+    }
+  ],
+  "driftRetests": [
+    {
+      "id": "drift_mua91nm3_inzsbd",
+      "settingOrderId": "setting_mua91nlq_y28f7g",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "driftSeconds": 8,
+      "qualified": true,
+      "testedAt": "2026-09-20T20:08:55.755Z",
+      "note": ""
+    },
+    {
+      "id": "drift_mua91nm4_in21hp",
+      "settingOrderId": "setting_mua91nlq_y28f7g",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "driftSeconds": -40,
+      "qualified": false,
+      "testedAt": "2026-09-20T20:08:55.756Z",
+      "note": ""
+    },
+    {
+      "id": "drift_mua91nm5_mes17r",
+      "settingOrderId": "setting_mua91nlq_y28f7g",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "driftSeconds": 6,
+      "qualified": true,
+      "testedAt": "2026-09-20T20:08:55.757Z",
+      "note": ""
+    },
+    {
+      "id": "drift_mua91nm6_bn1rlc",
+      "settingOrderId": "setting_mua91nlq_y28f7g",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 1,
+      "driftSeconds": 9,
+      "qualified": true,
+      "testedAt": "2026-09-20T20:08:55.758Z",
+      "note": ""
+    },
+    {
+      "id": "drift_mua91nmh_xh7b7u",
+      "settingOrderId": "setting_mua91nme_lw3x6p",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 3,
+      "driftSeconds": 4,
+      "qualified": true,
+      "testedAt": "2026-09-20T20:08:55.769Z",
+      "note": ""
+    },
+    {
+      "id": "drift_mua91nmi_11edyh",
+      "settingOrderId": "setting_mua91nme_lw3x6p",
+      "clockId": "clock_mua91nlo_97ufx9",
+      "generation": 3,
+      "driftSeconds": 7,
+      "qualified": true,
+      "testedAt": "2026-09-20T20:08:55.770Z",
+      "note": ""
+    }
+  ]
+}
